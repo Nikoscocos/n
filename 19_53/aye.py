@@ -30,7 +30,7 @@ while True:
                             banfile = open(banfiledir, "r", encoding="utf-8")
                             banread = banfile.read()
                             banfile.close()
-                            if str(user_id) not in banread:
+                            if str(user_id) in banread:
                                 post = event.message.text[6:]
                                 idrand = user_id
                                 user = vk.method("users.get", {"user_ids": f"{idrand}"}) # вместо 1 подставляете айди нужного юзера
