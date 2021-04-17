@@ -64,7 +64,7 @@ while True:
                                 cmd = 'git commit -m "Added Posts"'
                                 subprocess.call(cmd, shell=True)
                                 send_msg(peer_id, message=(f"Публикую ваш пост..."))
-                                cmd = "git remote set-url origin https://github.com/Nikoscocos/nikosite.github.io"
+                                cmd = "git remote set-url origin https://github.com/Nikoscocos/nikosites.github.io"
                                 subprocess.call(cmd, shell=True)
 
                                 cmd = "git push "
